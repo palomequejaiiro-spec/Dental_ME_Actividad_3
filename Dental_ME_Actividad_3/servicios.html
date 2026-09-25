@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dental M&E - Sistema web de gestión y agendamiento odontológico.">
+    <title>Dental M&E | Servicios</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="site-header">
+        <div class="container header-content">
+            <a class="logo" href="index.html" aria-label="Dental M&E - Inicio">
+                <span class="logo-icon" aria-hidden="true">🦷</span>
+                <span>DENTAL <strong>M&E</strong></span>
+            </a>
+
+            <nav class="main-nav" aria-label="Navegación principal">
+                <a class="nav-link" href="index.html">Inicio</a>
+                <a class="nav-link active" href="servicios.html">Servicios</a>
+                <a class="nav-link" href="equipo.html">Equipo</a>
+            </nav>
+
+            <a class="btn btn-outline" href="index.html#contacto">Contacto</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-hero">
+            <div class="container">
+                <span class="eyebrow">ATENCIÓN INTEGRAL</span>
+                <h1>Servicios <span>odontológicos</span></h1>
+                <p>Conoce las principales áreas de atención de Dental M&E y filtra según lo que necesites.</p>
+            </div>
+        </section>
+
+        <section class="section section-white">
+            <div class="container">
+                <div class="filter-bar" role="group" aria-label="Filtrar servicios">
+                    <button type="button" class="filter-btn active" data-filtro="todos">Todos</button>
+                    <button type="button" class="filter-btn" data-filtro="general">Cuidado general</button>
+                    <button type="button" class="filter-btn" data-filtro="especialidad">Especialidades</button>
+                    <button type="button" class="filter-btn" data-filtro="estetica">Estética</button>
+                </div>
+                <p id="contador-servicios" class="filter-count" aria-live="polite"></p>
+
+                <div class="cards-grid" id="lista-servicios">
+                    <article class="service-card" data-categoria="general">
+                        <div class="card-icon">✨</div>
+                        <h3>Odontología general</h3>
+                        <p>Prevención, revisión, diagnóstico y cuidado general de la salud oral.</p>
+                        <ul class="mini-list"><li>Evaluación odontológica</li><li>Prevención y orientación</li><li>Limpieza y cuidado oral</li></ul>
+                    </article>
+                    <article class="service-card" data-categoria="especialidad">
+                        <div class="card-icon">😁</div>
+                        <h3>Ortodoncia</h3>
+                        <p>Orientación para la corrección de la posición dental y la estética de la sonrisa.</p>
+                        <ul class="mini-list"><li>Valoración inicial</li><li>Seguimiento del tratamiento</li><li>Orientación de higiene</li></ul>
+                    </article>
+                    <article class="service-card" data-categoria="especialidad">
+                        <div class="card-icon">🦷</div>
+                        <h3>Endodoncia</h3>
+                        <p>Atención especializada para conservar piezas dentales cuando existe afectación interna.</p>
+                        <ul class="mini-list"><li>Valoración del dolor</li><li>Diagnóstico</li><li>Tratamiento especializado</li></ul>
+                    </article>
+                    <article class="service-card" data-categoria="especialidad">
+                        <div class="card-icon">🩺</div>
+                        <h3>Cirugía oral</h3>
+                        <p>Procedimientos odontológicos que requieren atención especializada y seguimiento profesional.</p>
+                        <ul class="mini-list"><li>Valoración</li><li>Planificación</li><li>Control posterior</li></ul>
+                    </article>
+                    <article class="service-card" data-categoria="general">
+                        <div class="card-icon">💙</div>
+                        <h3>Odontopediatría</h3>
+                        <p>Cuidado dental orientado a niños, con acompañamiento y educación preventiva.</p>
+                        <ul class="mini-list"><li>Prevención</li><li>Educación en higiene</li><li>Seguimiento</li></ul>
+                    </article>
+                    <article class="service-card" data-categoria="estetica">
+                        <div class="card-icon">★</div>
+                        <h3>Estética dental</h3>
+                        <p>Orientación para mejorar la apariencia de la sonrisa manteniendo un enfoque de salud oral.</p>
+                        <ul class="mini-list"><li>Valoración estética</li><li>Opciones de tratamiento</li><li>Plan personalizado</li></ul>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-soft">
+            <div class="container cta-box">
+                <div>
+                    <h2>¿No sabes qué servicio necesitas?</h2>
+                    <p>Contáctanos y recibe orientación sobre la atención más adecuada.</p>
+                </div>
+                <a class="btn btn-primary" href="index.html#contacto">Agendar cita</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-content">
+            <div>
+                <a class="logo footer-logo" href="index.html">
+                    <span class="logo-icon" aria-hidden="true">🦷</span>
+                    <span>DENTAL <strong>M&E</strong></span>
+                </a>
+                <p>Sistema web de gestión y agendamiento odontológico.</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="index.html">Inicio</a>
+                <a href="servicios.html">Servicios</a>
+                <a href="equipo.html">Equipo</a>
+                <a href="index.html#contacto">Contacto</a>
+            </div>
+        </div>
+
+        <div class="container footer-bottom">
+            <p>© 2026 Dental M&E. Proyecto académico.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
